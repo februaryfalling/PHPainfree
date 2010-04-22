@@ -32,7 +32,7 @@ $PainfreeConfig = array(
 	// each element in the array is a DB server to try. If one
 	// fails to connect, it will roll-over to the next
 	// leave the array empty for no DB connection
-	'DataBase' => array()
+	'DataBase' => array(),
 	/*
 	'DataBase' => array(
 		'PrimaryDB' => array(
