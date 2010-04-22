@@ -61,8 +61,8 @@ $PainfreeConfig = array(
 
 /************************* Don't touch *************************/
 $Painfree = new PHPainfree($PainfreeConfig);
-$Painfree->logic(); // load the application logic controller and process the request
-$Painfree->view();  // load the view
+include $Painfree->logic(); // load the application logic controller and process the request
+include $Painfree->view();  // load the view
 
 class PHPainfree {
 	public $Version = '0.1';
@@ -71,14 +71,10 @@ class PHPainfree {
 	private $options = array();
 	
 	public function logic() {
-		if ( file_exists($this->options['LogicFolder'] . $this->options['ApplicationController']) ) {
-			include $this->options['LogicFolder'] . $this->options['ApplicationController'];
-		}
+		return $this->options['LogicFolder'] . $this->options['ApplicationController'];
 	}
 	public function view() {
-		if ( file_exists($this->options['TemplateFolder'] . $this->options['BaseView']) ) {
-			include $this->options['TemplateFolder'] . $this->options['BaseView'];
-		}
+		return $this->options['TemplateFolder'] . $this->options['BaseView'];
 	}
 	
 	public function __construct($options) {
