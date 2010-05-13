@@ -12,7 +12,7 @@ I realized a fatal design flaw mere moments after upgrading my own site from v0.
 3. Painfree.php also really hopes (with all of it's might) that PainfreeConfig.php has a variable called $PainfreeConfig defined. 
 4. Installation instructions tweaked to reflect the new structure.
 
-*Running an actual Open Source project is hard. Before, I was just write whatever I want and hope for the best. Now I have to actually think about things like upgradability, installation, documentation, and other such silly things. To all 9 people (1 of whom I'm pretty sure is my mother) who "watch" the github repository: sorry for nothing thinking about this earlier...*
+*Running an actual Open Source project is hard. Before, I would just write whatever I want and hope for the best. Now I have to actually think about things like upgradability, installation, documentation, and other such silly things. To all 9 people (1 of whom I'm pretty sure is my mother) who "watch" the github repository: sorry for nothing thinking about this earlier...*
 
 Version 0.2.0
 -------------
