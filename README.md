@@ -8,11 +8,10 @@ To be honest, as a framework, I'm really too different to be defined at all. To 
 My Eternal Promise
 ------------------
 
-I, PHPainfree, do hereby solemnly swear and affirm the following related statements about  
-the relationship between **DEVELOPER** (hereafter referred to as "you") and **FRAMEWORK**  
-(hereafter referred to as "I").
+I, PHPainfree, do hereby solemnly swear and affirm the following related statements about the relationship  
+between **DEVELOPER** (hereafter referred to as "**you**") and **FRAMEWORK** (hereafter referred to as "**I**"). 
 
-1. I, PHPainfree, do solemnly swear to do everything in my power to absolutely stay out of your way. 
+1. **I eternally promise to do everything in my power to stay out of your way.** 
 2. I promise that I will never force you to do things my way just because I think my way is the best way (which it probably is).
 3. I promise that I will never force you to talk to me in some kind of nasty street slang that is only good for talking to Hobos and such. 
 4. Actually, now that I think about it, I promise that I won't make you talk to me at all if you don't feel like it. 
