@@ -4,9 +4,7 @@ PHPainfree
 An ultra-lightweight PHP framework.
 
 + **Version:** 0.2.0
-+ **Auther:** Eric Ryan Harrison (<me@ericharrison.info>)
-             <http://ericharrison.info>
-             <http://februaryfalling.com>
++ **Auther:** Eric Ryan Harrison (<me@ericharrison.info> || [blog](http://ericharrison.info) || [company](http://februaryfalling.com))
 
 Installation
 ------------
