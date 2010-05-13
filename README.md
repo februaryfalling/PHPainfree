@@ -8,25 +8,27 @@ To be honest, as a framework, I'm really too different to be defined at all. To 
 My Eternal Promise
 ------------------
 
-	I, PHPainfree, do hereby solemnly swear and affirm the following related statements about the relationship between DEVELOPER (hereafter referred to as "you") and FRAMEWORK (hereafter referred to as "I").
+I, PHPainfree, do hereby solemnly swear and affirm the following related statements about 
+the relationship between **DEVELOPER** (hereafter referred to as "you") and **FRAMEWORK**
+(hereafter referred to as "I").
 
-	1. I, PHPainfree, do solemnly swear to do everything in my power to absolutely stay out of your way. 
-	2. I promise that I will never force you to do things my way just because I think my way is the best way (which it probably is).
-	3. I promise that I will never force you to talk to me in some kind of nasty street slang that is only good for talking to Hobos and such. 
-	4. Actually, now that I think about it, I promise that I won't make you talk to me at all if you don't feel like it. 
-	5. I promise to just get out of your way and just let you do your work. I'll go sit in a corner and read a book or something.
-	6. I promise to always be here for you if you ever need a helping hand.
-	7. I promise to be the kind of friend that will gladly help you store all your files at my place, and I promise I'll always give them to you when you ask for them.
-	8. I promise I'll be the kind of friend who will run errands for you if you're too busy.
-	9. I promise that I will try to never drink the last can of soda without at least writing down that we need to buy more Dr. Pepper from the store the next time we go to buy groceries. 
+1. I, PHPainfree, do solemnly swear to do everything in my power to absolutely stay out of your way. 
+2. I promise that I will never force you to do things my way just because I think my way is the best way (which it probably is).
+3. I promise that I will never force you to talk to me in some kind of nasty street slang that is only good for talking to Hobos and such. 
+4. Actually, now that I think about it, I promise that I won't make you talk to me at all if you don't feel like it. 
+5. I promise to just get out of your way and just let you do your work. I'll go sit in a corner and read a book or something.
+6. I promise to always be here for you if you ever need a helping hand.
+7. I promise to be the kind of friend that will gladly help you store all your files at my place, and I promise I'll always give them to you when you ask for them.
+8. I promise I'll be the kind of friend who will run errands for you if you're too busy.
+9. I promise that I will try to never drink the last can of soda without at least writing down that we need to buy more Dr. Pepper from the store the next time we go to buy groceries. 
 
 Caveat Emptor
 -------------
 
-	With that said, while I promise to always live faithfully by the promises I've made to you, there are a few things that I simply cannot control. I'm not saying that these will always happen (or ever happen for that matter), but I just feel like since we're friends now, I have to warn you that these things could happen.
+With that said, while I promise to always live faithfully by the promises I've made to you, there are a few things that I simply cannot control. I'm not saying that these will always happen (or ever happen for that matter), but I just feel like since we're friends now, I have to warn you that these things could happen.
 
-	1. I'm not perfect. You're not perfect. Nobody is perfect. I can't promise that I'll never make a mistake. I make mistakes all the time. If you promise to not hold my mistakes against me, I promise I won't hold your mistakes against you. If you see me doing something wrong, just [let me know](http://github.com/blister/PHPainfree/issues). I'm pretty good at handling constructive criticism, and I think we'll both be happier in the long run if you just let me know when I do something you don't like.
-	2. I ran out of things to Caveat about, so this number 2 is merely to make it look like we're still busy doing some work...
+1. I'm not perfect. You're not perfect. Nobody is perfect. I can't promise that I'll never make a mistake. I make mistakes all the time. If you promise to not hold my mistakes against me, I promise I won't hold your mistakes against you. If you see me doing something wrong, just [let me know](http://github.com/blister/PHPainfree/issues). I'm pretty good at handling constructive criticism, and I think we'll both be happier in the long run if you just let me know when I do something you don't like.
+2. I ran out of things to Caveat about, so this number 2 is merely to make it look like we're still busy doing some work...
 	
 About
 -----
