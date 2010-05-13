@@ -28,7 +28,7 @@
 		<p>
 			But that's just me... do what you want.
 		</p>
-		<h2>Dump of $Painfree</h2>
-		<pre><?php print_r($Painfree); ?></pre>
+		<h2>Debugger</h2>
+		<?php include 'debug.tpl'; ?> 
 	</body>
 </html>	
