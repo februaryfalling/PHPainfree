@@ -67,7 +67,7 @@ Notes
 
 This really has only been tested in Apache. This is the first "release" of the framework. 
 
-*Nothing is well documented.*
+***Nothing is well documented.***
 
 There's really nothing too useful here at all. But, at the very least you should 
 theoretically be able to install PHPainfree and have any request to your server 
