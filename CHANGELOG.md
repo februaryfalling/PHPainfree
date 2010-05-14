@@ -1,6 +1,12 @@
 PHPainfree Functional Changelog
 ===============================
 
+Version 0.3.1
+-------------
+**May 14, 2010**
+
+1. Sanitized development source and corrected branch tags.
+
 Version 0.3.0
 -------------
 **May 13, 2010** *(a mere 30 minutes after v0.2)*
