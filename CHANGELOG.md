@@ -1,6 +1,12 @@
 PHPainfree Functional Changelog
 ===============================
 
+Version 0.3.2
+-------------
+**May 14, 2010**
+
+1. Fixed release tagging and tweaked documentation format.
+
 Version 0.3.1
 -------------
 **May 14, 2010**

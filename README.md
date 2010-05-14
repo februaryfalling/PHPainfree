@@ -1,13 +1,11 @@
 PHPainfree 
 ==========
-
-*A [February Falling](http://februaryfalling.com) project.*
++ *A [February Falling](http://februaryfalling.com) project.*
++ **Version:** 0.3.2
++ **Auther:** Eric Ryan Harrison ([email](me@ericharrison.info) || [blog](http://ericharrison.info) || [company](http://februaryfalling.com))
 
 About
 -----
-
-+ **Version:** 0.3.1
-+ **Auther:** Eric Ryan Harrison ([email](me@ericharrison.info) || [blog](http://ericharrison.info) || [company](http://februaryfalling.com))
 
 I am an **ultra**-lightweight PHP framework. I am inspired by the MVC concept, 
 but I'm too artsy to let myself be defined by labels like that. I basically 
