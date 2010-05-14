@@ -1,6 +1,12 @@
 PHPainfree Functional Changelog
 ===============================
 
+Version 0.3.3
+-------------
+**May 14, 2010**
+
+1. Documentation error corrected.
+
 Version 0.3.2
 -------------
 **May 14, 2010**

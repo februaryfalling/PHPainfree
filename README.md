@@ -1,7 +1,7 @@
 PHPainfree 
 ==========
 + *A [February Falling](http://februaryfalling.com) project.*
-+ **Version:** 0.3.2
++ **Version:** 0.3.3
 + **Auther:** Eric Ryan Harrison ([email](me@ericharrison.info) || [blog](http://ericharrison.info) || [company](http://februaryfalling.com))
 
 About
@@ -45,7 +45,7 @@ since we're friends now, I have to warn you that these things could happen.
 1. I'm not perfect. You're not perfect. Nobody is perfect. I can't promise that 
 I'll never make a mistake. I make mistakes all the time. If you promise to not 
 hold my mistakes against me, I promise I won't hold your mistakes against you. 
-If you see me doing something wrong, just [let me know](http://github.com/blister/PHPainfree/issues). 
+If you see me doing something wrong, just [let me know](http://github.com/februaryfalling/PHPainfree/issues). 
 I'm pretty good at handling constructive criticism, and I think we'll both be 
 happier in the long run if you just let me know when I do something you don't like.
 2. I ran out of things to Caveat about, so this number 2 is merely to make it look 

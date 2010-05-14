@@ -28,7 +28,7 @@ include $Painfree->view();  // load the view
 
 class PHPainfree {
 	/* public members */	
-	public $Version = '0.3.2';
+	public $Version = '0.3.3';
 	public $path = '';
 	public $db = null;
 	public $__debug = array(); // this is somewhat special.
