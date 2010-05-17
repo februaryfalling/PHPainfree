@@ -28,8 +28,9 @@ include $Painfree->view();  // load the view
 
 class PHPainfree {
 	/* public members */	
-	public $Version = '0.3.3';
+	public $Version = '0.4.0';
 	public $path = '';
+	public $Root = '';
 	public $db = null;
 	public $__debug = array(); // this is somewhat special.
 
@@ -37,10 +38,10 @@ class PHPainfree {
 	private $options = array();
 	
 	public function logic() {
-		return $this->options['LogicFolder'] . $this->options['ApplicationController'];
+		return $this->options['LogicFolder'] . '/' . $this->options['ApplicationController'];
 	}
 	public function view() {
-		return $this->options['TemplateFolder'] . $this->options['BaseView'];
+		return $this->options['TemplateFolder'] . '/' . $this->options['BaseView'];
 	}
 	
 	public function debug($heading,$obj,$abort=false) {
@@ -53,6 +54,10 @@ class PHPainfree {
 	public function __construct($options) {
 		$this->options = $options;
 		
+		// $this->Root is the root installation directory of PHPainfree
+		$re_strip_root = '/' . preg_replace('/\//', '\/', $this->options['LogicFolder']) . '\/Painfree.php/';
+		$this->Root = preg_replace($re_strip_root, '', __FILE__);
+
 		$this->path = isset($_REQUEST[$this->options['PathParameter']]) ? 
 			$_REQUEST[$this->options['PathParameter']] :
 			$this->options['DefaultView'];

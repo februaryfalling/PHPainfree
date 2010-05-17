@@ -71,7 +71,6 @@ $PainfreeConfig = array(
 	
 	// hardcore configuration. only change this if you know what you're doing
 	'PathParameter'  => 'path',
-	'TemplateFolder' => 'templates/',
-	'LogicFolder'    => 'includes/',
-	
+	'TemplateFolder' => 'templates',
+	'LogicFolder'    => 'includes',
 );

@@ -1,6 +1,13 @@
 PHPainfree Functional Changelog
 ===============================
 
+Version 0.4.0
+-------------
+**May 17, 2010**
+
+1. Added Root parameter to $Painfree. Root contains root path to PHPainfree installation.
+2. Removed trailing slash from PainfreeConfig path parameters.
+
 Version 0.3.3
 -------------
 **May 14, 2010**
