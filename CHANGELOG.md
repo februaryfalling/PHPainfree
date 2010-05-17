@@ -1,7 +1,7 @@
 PHPainfree Functional Changelog
 ===============================
 
-Version 0.4.0
+Version 0.4.1
 -------------
 **May 17, 2010**
 

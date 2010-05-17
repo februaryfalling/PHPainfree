@@ -1,7 +1,7 @@
 PHPainfree 
 ==========
 + *A [February Falling](http://februaryfalling.com) project.*
-+ **Version:** 0.3.3
++ **Version:** 0.4.1
 + **Auther:** Eric Ryan Harrison ([email](me@ericharrison.info) || [blog](http://ericharrison.info) || [company](http://februaryfalling.com))
 
 About
