@@ -1,6 +1,12 @@
 PHPainfree Functional Changelog
 ===============================
 
+Version 0.5.1
+-------------
+**May 20,2010**
+
+1. Tweaked markdown formatting for new readme files.
+
 Version 0.5.0 *Major Release*
 -----------------------------
 **May 20,2010**
