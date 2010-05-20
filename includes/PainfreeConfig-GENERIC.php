@@ -51,8 +51,13 @@ $PainfreeConfig = array(
 	// and if that fails, will then try BackupDB. Both failures
 	// would obviously result in application load failure, so
 	// just be aware of that possibility.
+	//
+	// The type parameter tells the DBI which database driver to use.
+	// If no "type" parameter is defined, the DBI will default to 
+	// mysql.
 	'Database' => array(
 		'PrimaryDB' => array(
+			'type'   => 'mysql',
 			'host'   => 'hostname.or.ip.of.server.1.com',
 			'user'   => 'username',
 			'pass'   => 'password',
@@ -60,6 +65,7 @@ $PainfreeConfig = array(
 			'port'   => 3306,
 		),
 		'BackupDB' => array(
+			'type'   => 'mysql',
 			'host'   => 'hostname.or.ip.of.server.2.com',
 			'user'   => 'username',
 			'pass'   => 'password',

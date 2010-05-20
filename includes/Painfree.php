@@ -23,15 +23,22 @@ Usage:
 require 'PainfreeConfig.php'; // you must have this file
 
 $Painfree = new PHPainfree($PainfreeConfig);
+// process Autoload folder
+$loaders = $Painfree->autoload();
+foreach ( $loaders as $load ) {
+	include $load;
+}
+
 include $Painfree->logic(); // load the application logic controller and process the request
 include $Painfree->view();  // load the view
 
 class PHPainfree {
 	/* public members */	
-	public $Version = '0.4.1';
+	public $Version = '0.5.0';
 	public $path = '';
 	public $Root = '';
 	public $db = null;
+	public $Autoload = array();
 	public $__debug = array(); // this is somewhat special.
 
 	/* private members */	
@@ -43,7 +50,17 @@ class PHPainfree {
 	public function view() {
 		return $this->options['TemplateFolder'] . '/' . $this->options['BaseView'];
 	}
-	
+
+	/* string $Painfree->safe($unsafe_string)
+		While $Painfree->safe() doesn't provide any form of guaranteed output
+		security, it will at least be a convenient way to make output "safe-ish"
+		for display. This method will probably need to evolve over time to 
+		provide more robust output sanitization.
+	*/
+	public function safe($unsafe='') {
+		return htmlspecialchars($unsafe);
+	}	
+
 	public function debug($heading,$obj,$abort=false) {
 		if ( $abort ) {
 			die('<pre>' . $heading . ' = ' . print_r($obj,true) . '</pre>');
@@ -51,22 +68,36 @@ class PHPainfree {
 		$this->__debug[$heading] = print_r($obj,true);
 	}
 
+	public function autoload() {
+		// process Autoload folder
+		$auto_load_path = $this->Root . $this->options['LogicFolder'] . '/Autoload/*.php';
+		$loaders = glob($auto_load_path);
+		if ( is_array($loaders) && count($loaders) ) {
+			foreach ( $loaders as $autoload ) {
+				list($junk,$file_name) = explode('Autoload/', $autoload);
+				$this->Autoload[$file_name] = $autoload;
+			}
+		}
+
+		return $this->Autoload;
+	}
+
 	public function __construct($options) {
 		$this->options = $options;
 		
 		// $this->Root is the root installation directory of PHPainfree
-		$re_strip_root = '/' . preg_replace('/\//', '\/', $this->options['LogicFolder']) . '\/Painfree.php/';
-		$this->Root = preg_replace($re_strip_root, '', __FILE__);
+		list($root_path,$junk) = explode($this->options['LogicFolder'], __FILE__);
+		$this->Root = $root_path;
 
 		$this->path = isset($_REQUEST[$this->options['PathParameter']]) ? 
 			$_REQUEST[$this->options['PathParameter']] :
 			$this->options['DefaultView'];
 			
+		// process database configuration
 		if ( count($options['Database']) ) {
 			include_once 'core/DBI.php';
 			$this->DBI = new DBI($options['Database']);
 			$this->db = $this->DBI->handle();
 		}
-			
 	}
 }

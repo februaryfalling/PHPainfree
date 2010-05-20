@@ -8,24 +8,24 @@
 		
 		public function handle() {
 			if ( $this->db ) {
-				return $db;
+				return $this->db;
 			}
+			return false;
 		}
 		
 		public function __construct($db_config) {
 			$this->Connections = $db_config;
 			
 			foreach ( $this->Connections as $server => $Conn ) {
-				$this->db = @new mysqli($Conn['host'], $Conn['user'], $Conn['pass'], $Conn['schema'], $Conn['port']);
-				if ( ! mysqli_connect_errno() ) {
+				$dbd = isset($Conn['type']) ? strtolower($Conn['type']) : 'mysql';
+				include_once 'DBD/' . $dbd . '.php';
+				$this->db = call_user_func($dbd . '::connect', $Conn['host'], $Conn['user'], $Conn['pass'], $Conn['schema'], $Conn['port']);
+				if ( $this->db ) {
 					break;
-				} else {
-					$errors[$server] = 'Connection Failure [#' . 
-						mysqli_connect_errno() . ']: ' . mysqli_connect_error();
 				}
 			}
 			
-			if ( $this->db === null ) {
+			if ( ! $this->db ) {
 				die('Sorry, a database connection could not be established.');
 			}
 		}

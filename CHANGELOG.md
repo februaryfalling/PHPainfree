@@ -1,6 +1,14 @@
 PHPainfree Functional Changelog
 ===============================
 
+Version 0.5.0 *Major Release*
+-----------------------------
+**May 20,2010**
+
+1. Extracted database driver subsystem into DBD. Now the DBI component is no longer tied to MySQL.
+2. Added Autoload folder under includes/. Any .php file placed in Autoload/ will be loaded automatically by $Painfree immediately before the Logic component is loaded. This would be a great place to put any generic libraries that you want your scripts to have access to. Please be aware that **every** PHP script inside this folder will be loaded with each request. Use with care.
+3. Fixed a bug with DBI that was not returning a proper DB handle when the method handle() was called.
+
 Version 0.4.1
 -------------
 **May 17, 2010**
