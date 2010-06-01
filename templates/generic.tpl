@@ -13,8 +13,8 @@
 		</p>
 		<p>
 			You'll also want to figure out your URL scheme you're going to use. These url's will be
-			placed in <code>$Painfree->path</code> after being set 
-			in <code>$_REQUEST['<?php echo $PainfreeConfig['PathParameter']; ?></code>.
+			placed in <code>$Painfree->route</code> after being set 
+			in <code>$_REQUEST['<?php echo $PainfreeConfig['RouteParameter']; ?></code>.
 		</p>
 		<p>
 			A scheme I always like to use is <code>/VIEW_NAME/ID/ACTION</code>.

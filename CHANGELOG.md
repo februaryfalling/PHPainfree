@@ -1,6 +1,12 @@
 PHPainfree Functional Changelog
 ===============================
 
+Version 0.6.0
+-------------
+**June 1,2010**
+
+1. Changed "path" parameters and configuration options to be "route" instead. When I was originally building this framework, I couldn't freaking remember what the "route" concept was called. Oh well, better late than never.
+
 Version 0.5.1
 -------------
 **May 20,2010**

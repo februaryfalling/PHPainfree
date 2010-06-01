@@ -36,7 +36,7 @@ $PainfreeConfig = array(
 	'BaseView' => 'generic.tpl',
 	
 	// DefaultView is the default view
-	'DefaultView' => 'main',
+	'DefaultRoute' => 'main',
 	
 	// DB Configuration
 	// each element in the array is a DB server to try. If one
@@ -76,7 +76,7 @@ $PainfreeConfig = array(
 	*/
 	
 	// hardcore configuration. only change this if you know what you're doing
-	'PathParameter'  => 'path',
+	'RouteParameter' => 'route',
 	'TemplateFolder' => 'templates',
 	'LogicFolder'    => 'includes',
 );

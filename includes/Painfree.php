@@ -34,12 +34,12 @@ include $Painfree->view();  // load the view
 
 class PHPainfree {
 	/* public members */	
-	public $Version = '0.5.1';
-	public $path = '';
-	public $Root = '';
-	public $db = null;
+	public $Version  = '0.5.1';
+	public $route    = '';
+	public $Root     = '';
+	public $db       = null;
 	public $Autoload = array();
-	public $__debug = array(); // this is somewhat special.
+	public $__debug  = array(); // this is somewhat special.
 
 	/* private members */	
 	private $options = array();
@@ -89,9 +89,9 @@ class PHPainfree {
 		list($root_path,$junk) = explode($this->options['LogicFolder'], __FILE__);
 		$this->Root = $root_path;
 
-		$this->path = isset($_REQUEST[$this->options['PathParameter']]) ? 
-			$_REQUEST[$this->options['PathParameter']] :
-			$this->options['DefaultView'];
+		$this->route = isset($_REQUEST[$this->options['RouteParameter']]) ? 
+			$_REQUEST[$this->options['RouteParameter']] :
+			$this->options['DefaultRoute'];
 			
 		// process database configuration
 		if ( count($options['Database']) ) {
