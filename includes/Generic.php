@@ -12,7 +12,7 @@
 			global $Painfree;
 			
 			// $this->db = $Painfree->db;
-			$this->path = $Painfree->path;
+			$this->route = $Painfree->route;
 		}
 	}
 	
