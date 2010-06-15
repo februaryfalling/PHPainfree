@@ -19,6 +19,7 @@ Usage:
 	Close your text editor now. This isn't the code you're
 	looking for.
 ****************************************************************/
+$__painfree_start_time = microtime(true);
 
 require 'PainfreeConfig.php'; // you must have this file
 
@@ -34,7 +35,8 @@ include $Painfree->view();  // load the view
 
 class PHPainfree {
 	/* public members */	
-	public $Version  = '0.6.3';
+	public $Version  = '0.7.0';
+	public $URI      = ($_SERVER['SERVER_PORT'] == 80 ? 'http://' : 'https://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 	public $route    = '';
 	public $Root     = '';
 	public $db       = null;

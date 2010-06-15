@@ -1,6 +1,14 @@
 PHPainfree Functional Changelog
 ===============================
 
+Version 0.7.0
+-------------
+**June 15,2010**
+
+1. Heavily modified debugging template to be a little bit nicer by default.
+2. Generic base template now imports jQuery from Google and also adds a stylesheet and javascript for debug template handling.
+3. Added $Painfree->URI parameter that gives the full request URL as passed to PHPainfree.
+
 Version 0.6.0,6.1,6.2,6.3
 -------------------------
 **June 1,2010**

@@ -3,6 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 	<head>
 		<title><?php echo $Generic->title(); ?></title>
+		<link rel="stylesheet" href="/css/debug.css" type="text/css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="/js/debug.js"></script>
 	</head>
 	<body>
 		<h1><?php echo $Generic->title(); ?> Installed!</h1>
