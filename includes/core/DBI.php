@@ -19,7 +19,13 @@
 			foreach ( $this->Connections as $server => $Conn ) {
 				$dbd = isset($Conn['type']) ? strtolower($Conn['type']) : 'mysql';
 				include_once 'DBD/' . $dbd . '.php';
-				$this->db = call_user_func($dbd . '::connect', $Conn['host'], $Conn['user'], $Conn['pass'], $Conn['schema'], $Conn['port']);
+				$this->db = call_user_func($dbd . '::connect', 
+					$Conn['host'], 
+					$Conn['user'], 
+					$Conn['pass'], 
+					$Conn['schema'], 
+					$Conn['port']
+				);
 				if ( $this->db ) {
 					break;
 				}

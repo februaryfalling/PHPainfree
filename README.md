@@ -1,7 +1,7 @@
 PHPainfree 
 ==========
 + *A [February Falling](http://februaryfalling.com) project.*
-+ **Version:** 0.7.0
++ **Version:** 0.8.0
 + **Auther:** Eric Ryan Harrison ([email](me@ericharrison.info) || [blog](http://ericharrison.info) || [company](http://februaryfalling.com))
 + **Tutorial:** [PHPainfree Test Drive](http://www.velvetcache.org/2010/06/07/phpainfree-test-drive)
 

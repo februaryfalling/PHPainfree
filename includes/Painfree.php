@@ -35,7 +35,7 @@ include $Painfree->view();  // load the view
 
 class PHPainfree {
 	/* public members */	
-	public $Version  = '0.7.0';
+	public $Version  = '0.8.0';
 	public $URI      = ($_SERVER['SERVER_PORT'] == 80 ? 'http://' : 'https://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 	public $route    = '';
 	public $Root     = '';

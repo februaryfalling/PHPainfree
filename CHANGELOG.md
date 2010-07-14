@@ -1,6 +1,12 @@
 PHPainfree Functional Changelog
 ===============================
 
+Version 0.8.0
+-------------
+**July 14,2010**
+
+1. Build PDO DB driver for MySQL. Now you can say $Conn['type'] = 'pdo_mysql' and have $Painfree->db be a PDO handle.
+
 Version 0.7.0
 -------------
 **June 15,2010**
