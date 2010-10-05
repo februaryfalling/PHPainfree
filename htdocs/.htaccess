@@ -8,4 +8,4 @@ RewriteRule ^images/(.+)$ images/$1 [L]
 
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteCond %{SCRIPT_FILENAME} !-d
-RewriteRule ^(.+)$ index.php?route=$1&%{QUERY_STIRNG} [L]
+RewriteRule ^(.+)$ index.php?route=$1&%{QUERY_STRING} [L]
