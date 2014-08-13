@@ -38,7 +38,7 @@ include $Painfree->view();  // load the view
 
 class PHPainfree {
 	/* public members */	
-	public $Version  = '0.8.0';
+	public $Version  = '0.9.0';
 	public $URI      = null;
 	public $route    = '';
 	public $Root     = '';
