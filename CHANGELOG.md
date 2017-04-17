@@ -1,6 +1,14 @@
 PHPainfree Functional Changelog
 ===============================
 
+Version 0.10.0
+-------------
+**April 17,2017**
+
+1. Changes .tpl files in templates/ folder to .php.
+2. Corrects typo in generic.php template.
+3. Corrects readability of default debug template CSS.
+
 Version 0.8.0
 -------------
 **July 14,2010**
@@ -68,7 +76,7 @@ I realized a fatal design flaw mere moments after upgrading my own site from v0.
 
 1. Pulled $PainfreeConfig out of Painfree.php and placed it in PainfreeConfig-GENERIC.php.
 2. Painfree.php now REQUIRES a file to exist called PainfreeConfig.php in the includes/ directory.
-3. Painfree.php also really hopes (with all of it's might) that PainfreeConfig.php has a variable called $PainfreeConfig defined. 
+3. Painfree.php also really hopes (with all of it's might) that PainfreeConfig.php has a variable called $PainfreeConfig defined.
 4. Installation instructions tweaked to reflect the new structure.
 
 *Running an actual Open Source project is hard. Before, I would just write whatever I want and hope for the best. Now I have to actually think about things like upgradability, installation, documentation, and other such silly things. To all 9 people (1 of whom I'm pretty sure is my mother) who "watch" the github repository: sorry for nothing thinking about this earlier...*
@@ -86,4 +94,4 @@ Version 0.1.0
 -------------
 **April 21, 2010**
 
-1. Initial release. Limited functionality provided. 
+1. Initial release. Limited functionality provided.

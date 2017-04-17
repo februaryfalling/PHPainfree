@@ -3,10 +3,10 @@
 /************************** PHPainfree **************************
 Name: Painfree.php
 
-Author: Eric Ryan Harrison 
+Author: Eric Ryan Harrison
 	me@ericharrison.info
 	http://ericharrison.info
-	
+
 Usage:
 	This script should be called by index.php in your document
 	root.
@@ -15,7 +15,7 @@ Usage:
 	in your includes/ directory. Define application
 	"configuration" in that file. You really don't
 	ever need to do anything with this file.
-	
+
 	Close your text editor now. This isn't the code you're
 	looking for.
 ****************************************************************/
@@ -37,8 +37,8 @@ include $Painfree->logic(); // load the application logic controller and process
 include $Painfree->view();  // load the view
 
 class PHPainfree {
-	/* public members */	
-	public $Version  = '0.9.0';
+	/* public members */
+	public $Version  = '0.10.0';
 	public $URI      = null;
 	public $route    = '';
 	public $Root     = '';
@@ -46,9 +46,9 @@ class PHPainfree {
 	public $Autoload = array();
 	public $__debug  = array(); // this is somewhat special.
 
-	/* private members */	
+	/* private members */
 	private $options = array();
-	
+
 	public function logic() {
 		return $this->options['LogicFolder'] . '/' . $this->options['ApplicationController'];
 	}
@@ -59,12 +59,12 @@ class PHPainfree {
 	/* string $Painfree->safe($unsafe_string)
 		While $Painfree->safe() doesn't provide any form of guaranteed output
 		security, it will at least be a convenient way to make output "safe-ish"
-		for display. This method will probably need to evolve over time to 
+		for display. This method will probably need to evolve over time to
 		provide more robust output sanitization.
 	*/
 	public function safe($unsafe='') {
 		return htmlspecialchars($unsafe);
-	}	
+	}
 
 	public function debug($heading,$obj,$abort=false) {
 		if ( $abort ) {
@@ -89,15 +89,15 @@ class PHPainfree {
 
 	public function __construct($options) {
 		$this->options = $options;
-		
+
 		// $this->Root is the root installation directory of PHPainfree
 		list($root_path,$junk) = explode($this->options['LogicFolder'], __FILE__);
 		$this->Root = $root_path;
 
-		$this->route = isset($_REQUEST[$this->options['RouteParameter']]) ? 
+		$this->route = isset($_REQUEST[$this->options['RouteParameter']]) ?
 			$_REQUEST[$this->options['RouteParameter']] :
 			$this->options['DefaultRoute'];
-			
+
 		// process database configuration
 		if ( count($options['Database']) ) {
 			include_once 'core/DBI.php';
