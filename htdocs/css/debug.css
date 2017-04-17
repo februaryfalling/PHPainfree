@@ -23,8 +23,9 @@
 }
 
 #debug .debug_output {
-	background-color: #000;
+	background-color: #333;
 	overflow: auto;
+	color: #fff;
 }
 #debug .closed {
 	display: none;
