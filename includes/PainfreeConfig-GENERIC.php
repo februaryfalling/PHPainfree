@@ -3,10 +3,10 @@
 /************************** PHPainfree **************************
 Name: PainfreeConfig-GENERIC.php
 
-Author: Eric Ryan Harrison 
+Author: Eric Ryan Harrison
 	me@ericharrison.info
 	http://ericharrison.info
-	
+
 Usage:
 	This is a GENERIC PHPainfree Configuration file.
 PHPainfree requires that a file exist inside the includes/
@@ -28,16 +28,16 @@ $PainfreeConfig = array(
 	// ApplicationController is the primary controller for your
 	// application. Generic.php is provided, but doesn't do anything
 	// except look for the view in the templates/ folder
-	'ApplicationController' => 'Generic.php', 
-	
+	'ApplicationController' => 'Generic.php',
+
 	// BaseView is the name of your base template inside of the templates
 	// folder. This base view generally provides the overall framework
 	// of output for your application
-	'BaseView' => 'generic.tpl',
-	
+	'BaseView' => 'generic.php',
+
 	// DefaultView is the default view
 	'DefaultRoute' => 'main',
-	
+
 	// DB Configuration
 	// each element in the array is a DB server to try. If one
 	// fails to connect, it will roll-over to the next
@@ -53,7 +53,7 @@ $PainfreeConfig = array(
 	// just be aware of that possibility.
 	//
 	// The type parameter tells the DBI which database driver to use.
-	// If no "type" parameter is defined, the DBI will default to 
+	// If no "type" parameter is defined, the DBI will default to
 	// mysql.
 	'Database' => array(
 		'PrimaryDB' => array(
@@ -74,7 +74,7 @@ $PainfreeConfig = array(
 		),
 	),
 	*/
-	
+
 	// hardcore configuration. only change this if you know what you're doing
 	'RouteParameter' => 'route',
 	'TemplateFolder' => 'templates',
