@@ -16,7 +16,7 @@ About
 -----
 
 + **Version:** 0.10.0
-+ **Auther:** Eric Ryan Harrison ([email](me@ericharrison.info) || [blog](http://ericharrison.info)
++ **Auther:** Eric Ryan Harrison ([email](mailto:phpainfree@ericharrison.info) || [blog](http://ericharrison.info))
 
 Installation
 ------------
@@ -26,7 +26,7 @@ Installation
 	3. Place the includes/ and templates/ folders somewhere accessible to your PHP's include root.
 		(If you can't mess with your include root, you should be able to place these folders inside your document root)
 	4. Copy includes/PainfreeConfig-GENERIC.php to PainfreeConfig.php.
-	5.Edit includes/PainfreeConfig.php. Modify the $PainfreeConfig variable to match your application configurat.
+	5. Edit includes/PainfreeConfig.php. Modify the $PainfreeConfig variable to match your application configurat.
 	6. Run and enjoy!
 
 Notes
