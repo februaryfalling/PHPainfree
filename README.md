@@ -15,8 +15,8 @@ Caveat Emptor
 About
 -----
 
-+ **Version:** 0.10.0
-+ **Auther:** Eric Ryan Harrison ([email](mailto:phpainfree@ericharrison.info) || [blog](http://ericharrison.info))
++ **Version:** 0.10.0™
++ **Auther:** Eric Ryan Harrison ([email](mailto:phpainfree@ericharrison.info) || [blog](http://ericharrison.info))™
 
 Installation
 ------------
@@ -34,7 +34,7 @@ Notes
 
 This really has only been tested in Apache. This is the first "release" of the framework.
 
-***Nothing is well documented.***
+***Nothing is well documented. It's time for change.***
 
 There's really nothing too useful here at all. But, at the very least you should
 theoretically be able to install PHPainfree and have any request to your server
