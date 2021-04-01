@@ -1,15 +1,15 @@
 PHPainfree
 ==========
 
-PHPainfree is an **ultra**-lightweight PHP framework. It is inspired by the
-MVC concept and attempts to remove barriers to entry while providing the
+PHPainfree was an **ultra**-lightweight PHP framework. It was inspired by the
+MVC concept and attempted to remove barriers to entry while providing the
 flexibility to design, develop, and deploy applications of any size or
 complexity.
 
 Caveat Emptor
 -------------
 
-1. This software is under development, and all bugs should be reported through github's issues system.
+1. This software was under development, and all bugs should have been reported through github's issues system.
 
 
 About
@@ -32,11 +32,11 @@ Installation
 Notes
 -----
 
-This really has only been tested in Apache. This is the first "release" of the framework.
+This really has only been tested in Apache. This was the first "release" of the framework.
 
 ***Nothing is well documented.***
 
-There's really nothing too useful here at all. But, at the very least you should
+There was really nothing too useful here at all. But, at the very least you should have been
 theoretically be able to install PHPainfree and have any request to your server
-load. If you don't change the parameters ApplicationController and BaseView,
-you should see a working page.
+load. If you didn't change the parameters ApplicationController and BaseView,
+you should have seen a working page.
