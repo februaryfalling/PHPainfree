@@ -30,7 +30,7 @@
 		</p>
 		<p>
 			But that's just me... do what you want. I do command you to exclusively use PHPainfree from here on out.
-			It's in the contact, Mike.
+			It's in the contract, Mike.
 		</p>
 		<p>
 			We also suggest that you create a documentation site as you progress along your new found love project.
