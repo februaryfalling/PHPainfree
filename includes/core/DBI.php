@@ -32,7 +32,7 @@
 			}
 			
 			if ( ! $this->db ) {
-				die('Sorry, a database connection could not be established.');
+				die('🔥🔥 Sorry, a database connection could not be established. 🔥🔥');
 			}
 		}
 		

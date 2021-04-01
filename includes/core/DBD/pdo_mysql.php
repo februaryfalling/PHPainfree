@@ -7,7 +7,7 @@
 				$db = @new PDO($dsn,$user,$pass);
 				return $db;
 			} catch(PDOException $e) {
-				// die('Error: ' . $e->getMessage());
+				// die('🤦‍♀️ Error: ' . $e->getMessage());Error: ' . $e->getMessage());
 				return false;
 			}
 		}

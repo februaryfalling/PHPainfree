@@ -1,5 +1,5 @@
 <?php
-	// This is a lightweight Debugging template. It basically just demonostrates
+	// This is a lightweight Debugging template. It basically just demonstrates
 	// how to use the debugging mechanisms provided by $Painfree.
 
 	// In most cases, you would really only want to have your primary
@@ -15,7 +15,7 @@
 	
 	$Painfree->debug('$PainfreeConfig', $PainfreeConfig);
 
-	$Painfree->debug('EXAMPLE', 'You can basically pass anything to $Painfree->debug().');
+	$Painfree->debug('EXAMPLE', 'You can basically pass anything 🍌 to $Painfree->debug().');
 ?> 
 <div id="debug">
 	<h2>
