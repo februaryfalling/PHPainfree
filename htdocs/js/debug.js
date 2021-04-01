@@ -1,6 +1,14 @@
-$(document).ready(function() {
-	$('#debug h3').live('click', function() {
-		var debug_id = $(this).toggleClass('closed').toggleClass('open').attr('id').replace(/debug_heading_/, '');
-		$('div#debug_' + debug_id).toggleClass('closed').toggleClass('open');
-	});
+// expand/collapse debug containers
+document.addEventListener("DOMContentLoaded", () => { 
+  document.querySelectorAll('#debug h3').forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.currentTarget.classList.toggle('closed');
+      e.currentTarget.classList.toggle('open');
+
+      const debugId = e.currentTarget.id.replace(/debug_heading_/, '');
+      const debugEl = document.getElementById(debugId);
+      debugEl.classList.toggle('closed');
+      debugEl.classList.toggle('open');
+    });
+  });
 });

@@ -4,7 +4,6 @@
 	<head>
 		<title><?php echo $Generic->title(); ?></title>
 		<link rel="stylesheet" href="/css/debug.css" type="text/css" />
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 		<script type="text/javascript" src="/js/debug.js"></script>
 	</head>
 	<body>
