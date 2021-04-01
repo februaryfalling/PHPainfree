@@ -10,8 +10,10 @@
 	<body>
 		<h1><?php echo $Generic->title(); ?> Installed!</h1>
 		<p>
-			You did it! PHPainfree is installed and working. Now you just need to build your app.
-			I suggest you build a top-level PHP script and place it in <code>includes/</code>. I
+			You are a genius! Against all odds, you somehow managed to get PHPainfree installed and working. Kudos.
+			You are now a part of a special, select group of engineers that have unlocked the key to the internet. Congrats.
+			<div class="tenor-gif-embed" data-postid="4158682" data-share-method="host" data-width="50%" data-aspect-ratio="1.4018691588785046"><a href="https://tenor.com/view/awesome-youreawesome-gif-4158682">Who's Awesome? GIF</a> from <a href="https://tenor.com/search/awesome-gifs">Awesome GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+			Now you just need to build your app. I suggest you build a top-level PHP script and place it in <code>includes/</code>. I
 			recommend that you name your script like your app's name.
 		</p>
 		<p>
@@ -29,7 +31,8 @@
 			and put it in templates and have your BaseView automatically load it from <code>templates/views/</code>.
 		</p>
 		<p>
-			But that's just me... do what you want.
+			These are the only clues I will give you. Good luck.
+			<div class="tenor-gif-embed" data-postid="5114734" data-share-method="host" data-width="50%" data-aspect-ratio="1.776978417266187"><a href="https://tenor.com/view/thehungergames-hungergames-thggifs-effie-gif-5114734">May The Odds Be Ever In Your Favor - Effie GIF</a> from <a href="https://tenor.com/search/maytheodds-gifs">Maytheodds GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 		</p>
 		<h2>Debugger</h2>
 		<?php include 'debug.tpl'; ?>
