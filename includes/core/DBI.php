@@ -7,7 +7,7 @@
 		private $db          = null;
 		
 		public function handle() {
-			if ( $this->db ) {
+			if ( !empty($this->db) ) {
 				return $this->db;
 			}
 			return false;
@@ -17,7 +17,7 @@
 			$this->Connections = $db_config;
 			
 			foreach ( $this->Connections as $server => $Conn ) {
-				$dbd = isset($Conn['type']) ? strtolower($Conn['type']) : 'mysql';
+				$dbd = !empty($Conn['type']) ? strtolower($Conn['type']) : 'mysql';
 				include_once 'DBD/' . $dbd . '.php';
 				$this->db = call_user_func($dbd . '::connect', 
 					$Conn['host'], 

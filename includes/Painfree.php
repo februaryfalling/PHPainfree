@@ -44,7 +44,7 @@ class PHPainfree {
 	public $Root     = '';
 	public $db       = null;
 	public $Autoload = array();
-	public $__debug  = array(); // this is somewhat special.
+	public $__debug  = array(); // this is somewhat special.™
 
 	/* private members */
 	private $options = array();
@@ -94,7 +94,7 @@ class PHPainfree {
 		list($root_path,$junk) = explode($this->options['LogicFolder'], __FILE__);
 		$this->Root = $root_path;
 
-		$this->route = isset($_REQUEST[$this->options['RouteParameter']]) ?
+		$this->route = !empty($_REQUEST[$this->options['RouteParameter']]) ?
 			$_REQUEST[$this->options['RouteParameter']] :
 			$this->options['DefaultRoute'];
 

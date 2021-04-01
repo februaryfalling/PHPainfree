@@ -6,6 +6,7 @@
 			if ( ! mysqli_connect_errno() ) {
 				return $db;
 			} else {
+				error_log('Uh oh! You don\'t have a DB connection? Strange, I thought this was supposed to be painfree!')
 				return false; //mysqli_connect_errno() . ']: ' . mysqli_connect_error();
 			}
 		}

@@ -15,7 +15,7 @@
 	
 	$Painfree->debug('$PainfreeConfig', $PainfreeConfig);
 
-	$Painfree->debug('EXAMPLE', 'You can basically pass anything to $Painfree->debug().');
+	$Painfree->debug('EXAMPLE', 'You can basically pass anything to $Painfree->debug().™');
 ?> 
 <div id="debug">
 	<h2>

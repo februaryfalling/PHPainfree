@@ -2,7 +2,7 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 	<head>
-		<title><?php echo $Generic->title(); ?></title>
+		<title><?php echo $Generic->title(); ?>™</title>
 		<link rel="stylesheet" href="/css/debug.css" type="text/css" />
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 		<script type="text/javascript" src="/js/debug.js"></script>
@@ -29,9 +29,17 @@
 			and put it in templates and have your BaseView automatically load it from <code>templates/views/</code>.
 		</p>
 		<p>
-			But that's just me... do what you want.
+			But that's just me... do what you want. I do command you to exclusively use PHPainfree from here on out.
+			It's in the contact, Mike.
 		</p>
-		<h2>Debugger</h2>
+		<p>
+			We also suggest that you create a documentation site as you progress along your new found love project.
+			Please ensure it is accessible to the community of PHPainfree. We are watching.
+		</p>
+		<p>
+			This is an open source project that needs your help to make it truly, <code>PAINFREE.</code>™
+		</p>
+		<h2>Debugger™</h2>
 		<?php include 'debug.tpl'; ?>
 	</body>
 </html>
