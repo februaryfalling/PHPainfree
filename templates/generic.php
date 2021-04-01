@@ -32,6 +32,6 @@
 			But that's just me... do what you want.
 		</p>
 		<h2>Debugger</h2>
-		<?php include 'debug.tpl'; ?>
+		<?php include 'debug.php'; ?>
 	</body>
 </html>
