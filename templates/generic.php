@@ -35,6 +35,6 @@
 			<div class="tenor-gif-embed" data-postid="5114734" data-share-method="host" data-width="50%" data-aspect-ratio="1.776978417266187"><a href="https://tenor.com/view/thehungergames-hungergames-thggifs-effie-gif-5114734">May The Odds Be Ever In Your Favor - Effie GIF</a> from <a href="https://tenor.com/search/maytheodds-gifs">Maytheodds GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 		</p>
 		<h2>Debugger</h2>
-		<?php include 'debug.tpl'; ?>
+		<?php include 'debug.php'; ?>
 	</body>
 </html>
