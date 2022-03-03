@@ -16,7 +16,7 @@ About
 -----
 
 + **Version:** 0.10.0
-+ **Auther:** Eric Ryan Harrison ([email](mailto:phpainfree@ericharrison.info) || [blog](http://ericharrison.info))
++ **Author:** Eric Ryan Harrison ([email](mailto:phpainfree@ericharrison.info) || [blog](http://ericharrison.info))
 
 Installation
 ------------
