@@ -17,6 +17,7 @@ class MySQLiHelpers {
 	 * @return mixed an associative array of results for selects, affected rows for updates, insert_id for inserts and null on any error
 	 */
 	public function query(string $query, string $types = null, array $params = null, bool $single = false) {
+		$query = trim($query);
 		try {
 			if (!$this->db) {
 				throw new \Exception('no database connection established');
