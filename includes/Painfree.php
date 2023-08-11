@@ -38,7 +38,7 @@ include $Painfree->view();  // load the view
 
 class PHPainfree {
 	/* public members */
-	public $Version  = '0.10.0';
+	public $Version  = '0.11.0';
 	public $URI      = null;
 	public $route    = '';
 	public $Root     = '';
@@ -63,6 +63,10 @@ class PHPainfree {
 		provide more robust output sanitization.
 	*/
 	public function safe($unsafe='') {
+		// null arguments to htmlspecialchars() is deprecated
+		if ( ! $unsafe ) {
+			return '';
+		}
 		return htmlspecialchars($unsafe);
 	}
 

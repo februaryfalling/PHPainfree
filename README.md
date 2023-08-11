@@ -15,7 +15,7 @@ Caveat Emptor
 About
 -----
 
-+ **Version:** 0.10.0
++ **Version:** 0.11.0
 + **Author:** Eric Ryan Harrison ([email](mailto:phpainfree@ericharrison.info) || [blog](http://ericharrison.info))
 
 Installation
