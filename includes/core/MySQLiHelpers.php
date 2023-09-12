@@ -13,10 +13,17 @@ class MySQLiHelpers {
 	 * @param string $query
 	 * @param string|null $types
 	 * @param array|null $params
+	 * @param string|null $assoc_key
 	 * @param bool $one
 	 * @return mixed an associative array of results for selects, affected rows for updates, insert_id for inserts and null on any error
 	 */
-	public function query(string $query, string $types = null, array $params = null, bool $single = false) {
+	public function query(
+		string $query,
+		string $types = null,
+		array $params = null,
+		string $assoc_key = null,
+		bool $single = false,
+	) {
 		$query = trim($query);
 		try {
 			if (!$this->db) {
@@ -57,8 +64,31 @@ class MySQLiHelpers {
 		return null;
 	}
 
-	// get a single result as an associative array for selects
+	/**
+	 * Get a single SELECT result as an associative array with column names as keys
+	 *
+	 * @param string $query
+	 * @param string|null $types
+	 * @param array|null $params
+	 * @return array|null an associative array or null on any error
+	 */
 	public function queryOne(string $query, string $types = null, array $params = null) {
 		return $this->query($query, $types, $params, true);
 	}
+
+	/**
+	 * Get a SELECT result as a multi-dimensional associative array with
+	 * specified column name as the key and the value as an associative array
+	 * with column names as keys
+	 *
+	 * @param string $query
+	 * @param string|null $types
+	 * @param array|null $params
+	 * @param string|null $key_name the column name to use as the key, default is "id"
+	 * @return array|null an associative array of results or null on any error.
+	 */
+	public function queryWithAssocKey(string $query, string $types = null, array $params = null, $key_name = 'id') {
+		return $this->query($query, $types, $params, $key_name, false);
+	}
+
 }

@@ -1,0 +1,30 @@
+version: '3.9'
+
+services:
+  phpainfree_dev:
+    build: ./docker/local/php
+    image: phpainfree
+    container_name: phpainfree
+    deploy:
+      resources: 
+        limits:
+          memory: 200M
+    volumes:
+      - .:/var/www/vhosts/phpainfree
+    networks:
+      static-network:
+        ipv4_address: 172.18.0.3
+    ports:
+      - '8888:80'
+    environment:
+      COMPOSER_CACHE_DIR: './.composer_cache'
+
+networks:
+  static-network:
+    name: phpainfree_static-network
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.18.0.0/24
+          gateway: 172.18.0.1
+
