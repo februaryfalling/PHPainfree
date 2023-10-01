@@ -23,8 +23,8 @@ if ( $App->htmx && file_exists("{$App->BASE_PATH}/templates/views/{$App->view}.p
 		<script async defer src="https://buttons.github.io/buttons.js"></script>
 
 		<!-- Prism (syntax highlighting in <code> blocks) -->
-		<link href="/css/prism.css" rel="stylesheet" />
-		<script src="/js/prism.js"></script>
+		<link href="/css/prism.min.css" rel="stylesheet" />
+		<script src="/js/prism.min.js"></script>
 
 <?php
 	// DYNAMICALLY LOADED CSS AND JAVASCRIPT (by $App->view)
