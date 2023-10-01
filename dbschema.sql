@@ -1,0 +1,9 @@
+CREATE TABLE users (
+	`id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+	`email` VARCHAR(255) NOT NULL,
+	`name` VARCHAR(255) NOT NULL,
+	`pass_hash` VARCHAR(255) NOT NULL,
+	`admin` TINYINT NOT NULL DEFAULT 0,
+	`created_on` DATETIME NOT NULL DEFAULT current_timestamp(),
+	PRIMARY KEY(`id`)
+) ENGINE=InnoDB ;

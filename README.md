@@ -6,6 +6,17 @@ MVC concept and attempts to remove barriers to entry while providing the
 flexibility to design, develop, and deploy applications of any size or
 complexity.
 
+Version 2 comes with a significant shift in opinion, focused on developer
+productivity and happiness. Whenever possible, we follow a [HATEOS](https://en.wikipedia.org/wiki/HATEOAS)
+approach to software development, and Version 2 of PHPainfree comes bundled
+with "opinions" and options on how to build modern, functional web applications.
+
+This version comes embedded with [htmx](https://htmx.org) and has significant
+improvements to the underlying PHP library design to make use of the `htmx` 
+system of partial content swaps with `htmx` magic. You're still free, as always,
+to roll your own mechanisms for anything, but we've provided a more robust
+set of defaults to show you a different way to build PHP software products.
+
 Caveat Emptor
 -------------
 
@@ -15,7 +26,7 @@ Caveat Emptor
 About
 -----
 
-+ **Version:** 0.11.0
++ **Version:** 2.0.0
 + **Author:** Eric Ryan Harrison ([email](mailto:phpainfree@ericharrison.info) || [blog](http://ericharrison.info))
 
 Installation
@@ -29,14 +40,15 @@ Installation
 	5. Edit includes/PainfreeConfig.php. Modify the $PainfreeConfig variable to match your application configuration.
 	6. Run and enjoy!
 
+Development Installation
+------------------------
+V2 comes with a predefined Docker image to make local development much easier.
+To run, simply run the following command inside your folder:
+```console
+docker compose up
+```
+
 Notes
 -----
 
-This really has only been tested in Apache. This is the first "release" of the framework.
-
-***Nothing is well documented.***
-
-There's really nothing too useful here at all. But, at the very least you should
-theoretically be able to install PHPainfree and have any request to your server
-load. If you don't change the parameters ApplicationController and BaseView,
-you should see a working page.
+- v2 is a work in progress. All ideas and suggestions are welcome!

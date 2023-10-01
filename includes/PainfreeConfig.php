@@ -1,21 +1,11 @@
 <?php
 
 /************************** PHPainfree **************************
-Name: PainfreeConfig-GENERIC.php
+Name: PainfreeConfig.php
 
 Author: Eric Ryan Harrison
 	me@ericharrison.info
 	http://ericharrison.info
-
-Usage:
-	This is a GENERIC PHPainfree Configuration file.
-PHPainfree requires that a file exist inside the includes/
-directory named "PainfreeConfig.php". You can copy this
-file and use it as a template to get started building
-your first PHPainfree Application.
-
-	cp PainfreeConfig-GENERIC.php PainfreeConfig.php
-	vi PainfreeConfig.php
 ****************************************************************/
 
 /*************************** Edit Me ***************************/
@@ -28,12 +18,12 @@ $PainfreeConfig = array(
 	// ApplicationController is the primary controller for your
 	// application. Generic.php is provided, but doesn't do anything
 	// except look for the view in the templates/ folder
-	'ApplicationController' => 'Generic.php',
+	'ApplicationController' => 'App.php',
 
 	// BaseView is the name of your base template inside of the templates
 	// folder. This base view generally provides the overall framework
 	// of output for your application
-	'BaseView' => 'generic.php',
+	'BaseView' => 'app.php',
 
 	// DefaultView is the default view
 	'DefaultRoute' => 'main',
